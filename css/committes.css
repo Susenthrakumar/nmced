@@ -1,0 +1,343 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* Main Header */
+.mains-header {
+    display: flex;
+    justify-content: flex-start; /* Space between logo and menu */
+    align-items: center;
+    font-family: 'Garamond', serif;
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 1200px; /* Optional: You can adjust max width to suit your needs */
+    margin: 0 auto; /* Ensures the header is centered on the page */
+}
+
+
+/* Logo Box */
+.logo-box {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligns logo to the right */
+    width: 220px; /* Adjust width as needed */
+    height: 60px; /* Fixed height */
+    flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+
+/* Logo Image */
+.logo img {
+    width: 210%; /* Increase the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure proper scaling */
+    margin-right: 280px;
+}
+
+/* Navigation Styling */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    flex: 1;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    margin-right: -5px;/* Right left move pana*/
+    color: #000;
+    display: inline-block;
+    font-size: 20px;
+    padding: 8px 0px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav a.active {
+    background-color:rgb(0, 34, 145); /* Active background */
+    color: white; /* Active text color */
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    background-color:rgb(0, 34, 145); /* Hover background */
+    color: #fff; /* Hover text color */
+}
+
+
+
+
+
+         /* Dropdown styles */
+         .dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgb(0, 34, 145); /* Add border to dropdown */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            white-space: nowrap; /* Prevents text wrapping */
+            border-radius: 5px; /* Rounded corners */
+        }
+        
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            border: 1px solid rgb(0, 34, 145); /* Add border to dropdown */
+            border-radius: 5px; /* Rounded corners */
+            overflow: hidden; /* Keep rounded corners clean */
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            
+        }
+
+        .dropdown-menu a:hover {
+            background-color: rgb(0, 34, 145);
+        }
+
+
+
+
+
+
+
+
+/* Breadcrumb Section */
+.breadcrumb-section {
+    background: rgb(0, 34, 145);
+    padding: 5px 5px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px; /* Added space below the breadcrumb section */
+}
+
+.breadcrumb-section h1 {
+    font-size: 32px;
+    color: white;
+    margin: 0 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb-section .breadcrumbs {
+    font-size: 16px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb-section .breadcrumbs a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.breadcrumb-section .breadcrumbs a:hover {
+    text-decoration: underline;
+    color: white; /* Changes the color to red */
+}
+
+
+
+
+
+
+
+.committees {
+    text-align: center;
+    padding: 2em;
+    margin-top: -40px;
+  }
+
+  .committee-link {
+    text-decoration: none; /* Removes the default underline */
+    color: inherit; /* Inherits the text color from the parent */
+    display: block; /* Makes the link cover the entire cell */
+    text-align: center; /* Centers the text */
+  }
+  
+  .committees h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+  }
+  
+  .committee-table {
+    width: 70%;
+    border-collapse: separate;  /* Change from collapse to separate */
+    border-spacing: 30px;  /* Add spacing between cells */
+    margin: auto;
+  }
+  
+  .committee-table td {
+    width: 33%;
+    text-align: center;
+    padding: 1.5em;
+    vertical-align: middle;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.4);  /* Shadow effect */
+  }
+  
+  
+  .committee-table td:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.6);  /* Shadow effect */
+  }
+  
+  .committee-table td i {
+    font-size: 2em;
+    color: rgb(0, 34, 145);
+    font: bold;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  .committee-table td p {
+    font-size: 1.2em; /* Slightly smaller for better balance */
+    color: #333; /* Darker text for readability */
+    margin: 0.3em 0; /* Adds some spacing above and below */
+    font-weight: 500; /* Slightly bolder for emphasis */
+    text-transform: capitalize; /* Ensures text is neatly capitalized */
+  }
+  
+  .committee-table td .enum {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: rgb(0, 34, 145); /* Red badge background */
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%; /* Makes it circular */
+    margin-bottom: 0.5em; /* Space below the badge */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for depth */
+  }
+
+  
+  
+/* Default styling for the committee links */
+.committee-link {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+}
+
+/* Zoom effect on hover for each committee link */
+.committee-link:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    filter: brightness(90%); /* Slight dimming effect */
+}
+
+/* Dimming other committee links when one is selected */
+.committee-link.dimmed {
+    filter: brightness(70%); /* Dimmed effect on non-selected links */
+}
+
+/* Ensure the text and icon are properly displayed */
+.committee-link i {
+    font-size: 30px; /* Adjust icon size */
+    margin-bottom: 10px;
+}
+
+.committee-link p {
+    font-size: 18px; /* Adjust text size */
+    margin-top: 10px;
+    color: black; /* Default text color */
+}
+
+/* Optionally, change the color of text when hovered */
+.committee-link:hover p {
+    color: red; /* Change text color on hover */
+}
+
+    
+
+
+/* General styles */
+.committee-table td {
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Animation styles */
+.committee-table td.animate-cell {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+
+
+
+
+        /* Back to Top Button Styles */
+        .back-to-top-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 20px; /* Pill shape */
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            z-index: 1000;
+            display: none;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: scale(0.8);
+        }
+
+        .back-to-top-btn:hover {
+            background-color: white;
+            transform: scale(1);
+            box-shadow: 0 6px 15px rgba
+        }
+
+
+        /* Show the button when scrolling up */
+        .show {
+            display: block !important;
+        }
+
+        /* Smooth Scroll Behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
